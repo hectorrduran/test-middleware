@@ -4,6 +4,16 @@
   "description": "Middleware framework-agnostic para validar tokens JWT y roles (NestJS y Express)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./nestjs": {
+      "types": "./dist/nestjs.d.ts",
+      "default": "./dist/nestjs.js"
+    }
+  },
   "files": [
     "dist"
   ],

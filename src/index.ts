@@ -11,21 +11,12 @@
 export * from './core';
 
 // ============================================
-// ADAPTADORES PARA NESTJS
-// ============================================
-export * from './adapters/nestjs';
-
-// ============================================
 // ADAPTADORES PARA EXPRESS
 // ============================================
 export * from './adapters/express';
 
 // ============================================
-// LEGACY EXPORTS (Para retrocompatibilidad)
+// NOTA: Para usar con NestJS, importa desde:
+// import { ... } from '@falabella/middleware-token-validate/nestjs'
 // ============================================
-// Re-exportar con nombres antiguos para no romper código existente
-export { TokenValidateMiddleware } from './adapters/nestjs-middleware';
-export { RolesGuard } from './adapters/nestjs-guard';
-export { TokenValidateModule } from './adapters/nestjs-module';
-export * from './adapters/nestjs-decorators';
 
